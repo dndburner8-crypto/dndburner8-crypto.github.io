@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #35424a;
+            color: #ffffff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .game-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .game-list li {
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 15px;
+            background: #5cb85c;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Game Portal</h1>
+    </header>
+    <div class="container">
+        <h2>Available Games</h2>
+        <ul class="game-list">
+            <li>Game 1 <button onclick="playGame('Game 1')">Play</button></li>
+            <li>Game 2 <button onclick="playGame('Game 2')">Play</button></li>
+            <li>Game 3 <button onclick="playGame('Game 3')">Play</button></li>
+        </ul>
+    </div>
+    <footer>
+        <p>&copy; 2026 Game Portal. All rights reserved.</p>
+    </footer>
+    <script>
+        function playGame(gameName) {
+            alert("Starting " + gameName + "!");
+        }
+    </script>
+</body>
+</html>
